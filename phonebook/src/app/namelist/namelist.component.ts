@@ -15,13 +15,13 @@ export class NamelistComponent implements OnInit {
 
   Add(values){
     console.log(values);
-  this.http.put("http://localhost:1337/Contact/",values).map(res=> res).subscribe();
+  this.http.put("https://harithsailsjs.herokuapp.com/",values).map(res=> res).subscribe();
     
   }
 
   makeRequest(): void {
    
-     this.http.get("http://localhost:1337/Contact/").map(res=> res.json()).subscribe(data =>{ this.list= data });
+     this.http.get("https://harithsailsjs.herokuapp.com/").map(res=> res.json()).subscribe(data =>{ this.list= data });
   
   }
   ngOnInit() {
