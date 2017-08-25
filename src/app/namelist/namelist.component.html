@@ -1,0 +1,38 @@
+
+<form  #form="ngForm"  NgNoValidate>
+  <h1>Phone Book Forum</h1>
+  <hr>
+  <div >
+ Name:
+    <input type="text"ngModel name="name"size=30 required><br>
+  </div>
+  <div>
+   Phone Number:
+    <input type="text"ngModel name="Phonenumber" size=30 required><br>
+  </div>  
+    <button (click)="Add(form.value)">Add</button>
+    
+   
+</form>
+
+
+
+
+
+<button (click)="makeRequest()">Make Request</button>
+
+
+<div class="lists" *ngFor="let entry of list">
+  <div class="details">
+      <span>
+
+          <ul style="background-color: transparent ;">
+                  <li><i>Name: {{entry.name}}</i></li>
+                  <li><i>phoneNumber: {{entry.Phonenumber}}</i></li>
+
+          </ul>
+
+      </span>
+  </div>
+</div>
+
