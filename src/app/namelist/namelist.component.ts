@@ -15,7 +15,7 @@ export class NamelistComponent implements OnInit {
 
   Add(values){
     console.log(values);
-  this.http.put("https://harithsailsjs.herokuapp.com/contact",values).map(res=> res).subscribe();
+  this.http.put("https://harithsailsjs.herokuapp.com/contact/",values).map(res=> res).subscribe();
     
   }
 
