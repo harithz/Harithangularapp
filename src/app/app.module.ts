@@ -10,16 +10,17 @@ import { FormsModule }   from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    NamelistComponent
+    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     HttpModule,
+    NamelistComponent,
     FormsModule 
   ],
   exports: [
-    NamelistComponent
+ 
   ],
   providers:[
     PhoneBookService
